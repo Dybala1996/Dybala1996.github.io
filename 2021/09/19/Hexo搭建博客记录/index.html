@@ -270,20 +270,22 @@
 <p>解决办法：开梯子。</p>
 </li>
 </ol>
-<img src="/.io//09/19/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E8%AE%B0%E5%BD%95/p1.png" srcset="/img/loading.gif" lazyload class>
+<p>&nbsp;</p>
+<img src="/2021/09/19/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E8%AE%B0%E5%BD%95/p1.png" srcset="/img/loading.gif" lazyload class>
 
 <ol start="2">
 <li><p>部署到github使用账号密码登陆时，报错。原因在于github从2021年8月13就开始使用token登陆，好像是为了提高安全性啥的。</p>
 <p>解决办法：不要用自己的github密码登陆，直接使用tokens作为密码来登录。<a target="_blank" rel="noopener" href="https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token">创建token的方法</a></p>
 </li>
 </ol>
-<img src="/.io//09/19/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E8%AE%B0%E5%BD%95/p2.png" srcset="/img/loading.gif" lazyload class>
+<p>&nbsp;</p>
+<img src="/2021/09/19/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E8%AE%B0%E5%BD%95/p2.png" srcset="/img/loading.gif" lazyload class>
 
 <ol start="3">
-<li>在文章中插入图片后无法显示。原因在于引用的图片路径不对。<br>&nbsp;<img src="/.io//09/19/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E8%AE%B0%E5%BD%95/p3.png" srcset="/img/loading.gif" lazyload class>
-&nbsp;<br>可以打开文章网址页面，使用F12查看文章中图片引用的路径，发现路径是错的。<br>&nbsp;<img src="/.io//09/19/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E8%AE%B0%E5%BD%95/p4.png" srcset="/img/loading.gif" lazyload class>
-&nbsp;<img src="/.io//09/19/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E8%AE%B0%E5%BD%95/p5.png" srcset="/img/loading.gif" lazyload class>
-&nbsp;<br>从github中仓库可以看到，在博客中的图片经过hexo到处理实际上是上传到了如下位置<br>&nbsp;<img src="/.io//09/19/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E8%AE%B0%E5%BD%95/p6.png" srcset="/img/loading.gif" lazyload class>
+<li>在文章中插入图片后无法显示。原因在于引用的图片路径不对。<br>&nbsp;<img src="/2021/09/19/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E8%AE%B0%E5%BD%95/p3.png" srcset="/img/loading.gif" lazyload class>
+&nbsp;<br>可以打开文章网址页面，使用F12查看文章中图片引用的路径，发现路径是错的。<br>&nbsp;<img src="/2021/09/19/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E8%AE%B0%E5%BD%95/p4.png" srcset="/img/loading.gif" lazyload class>
+&nbsp;<img src="/2021/09/19/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E8%AE%B0%E5%BD%95/p5.png" srcset="/img/loading.gif" lazyload class>
+&nbsp;<br>从github中仓库可以看到，在博客中的图片经过hexo到处理实际上是上传到了如下位置<br>&nbsp;<img src="/2021/09/19/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E8%AE%B0%E5%BD%95/p6.png" srcset="/img/loading.gif" lazyload class>
 &nbsp;<br>​    解决办法：首先要安装一个插件，这个插件安装后当使用hexo new一篇新文章时，会在文章目录下新建一个与文章名字相同的文件夹用来存储文章中引用的图片，并且可以将引用的图片路径自动转换为推送到github后的图片所处的仓库路径地址。</li>
 </ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">npm install https://github.com/CodeFalling/hexo-asset-image --save<br></code></pre></td></tr></table></figure>
