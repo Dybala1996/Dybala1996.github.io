@@ -6,3 +6,5 @@ tags:
 ---
 
 ![p1](/Users/dy/Blog/source/_posts/ceshi/p1.png)
+
+{% asset_image p1.png %}

@@ -105,22 +105,23 @@ hexo d
 
    解决办法：不要用自己的github密码登陆，直接使用tokens作为密码来登录。[创建token的方法](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token)
 
+&nbsp;
 {% asset_image p2.png %}
 
 3. 在文章中插入图片后无法显示。原因在于引用的图片路径不对。
-
+&nbsp;
 {% asset_image p3.png %}
-
+&nbsp;
 可以打开文章网址页面，使用F12查看文章中图片引用的路径，发现路径是错的。
-
+&nbsp;
 {% asset_image p4.png %}
-
+&nbsp;
 {% asset_image p5.png %}
-
+&nbsp;
 从github中仓库可以看到，在博客中的图片经过hexo到处理实际上是上传到了如下位置
-
+&nbsp;
 {% asset_image p6.png %}
-
+&nbsp;
 ​	解决办法：首先要安装一个插件，这个插件安装后当使用hexo new一篇新文章时，会在文章目录下新建一个与文章名字相同的文件夹用来存储文章中引用的图片，并且可以将引用的图片路径自动转换为推送到github后的图片所处的仓库路径地址。
 
 ```bash
@@ -205,4 +206,3 @@ post_asset_folder: true
 ```text
 {% asset_image example.jpg %}
 ```
-
