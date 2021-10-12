@@ -216,3 +216,15 @@ func main() {
 }
 ```
 
+
+
+## DataService 与其他模块RabbitMq模型
+
+DataService 作为 Publisher (Producer)，其他模块作为 Subscriber (Consumer)
+
+![image-20211008204304965](/home/ts/.config/Typora/typora-user-images/image-20211008204304965.png)
+
+DataService 作为 Subscriber (Consumer)， 其他模块作为 Publisher (Producer)
+
+![image-20211008205054850](/home/ts/.config/Typora/typora-user-images/image-20211008205054850.png)
+
